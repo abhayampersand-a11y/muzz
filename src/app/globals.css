@@ -95,16 +95,15 @@ body {
 .margin_top {
   @apply md:mt-[6.25rem] mt-0;
 }
-/* Slick Slider */
-.slick-slide,
-.portfolio_slide {
-  @apply focus-visible:outline-0!;
+/* Swiper */
+.portfolio-swiper .swiper-pagination-bullet {
+  @apply bg-[#BBC8D5] opacity-100 w-2.5 h-2.5 transition-all duration-300;
 }
-.slick-dots li.slick-active button:before {
-  @apply opacity-100! text-primary! w-4! h-4!;
+.portfolio-swiper .swiper-pagination-bullet-active {
+  @apply bg-primary w-6 rounded-full;
 }
-.slick-dots li button:before {
-  @apply text-base! text-[#BBC8D5]! opacity-100!;
+.portfolio-swiper .swiper-slide {
+  @apply h-auto;
 }
 
 .blog-details p,
