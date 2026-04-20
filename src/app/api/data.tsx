@@ -58,6 +58,16 @@ export const Servicebox = [
     title: "Residential & Industrial Wiring",
     description: "Complete electrical wiring solutions for homes, factories, offices, and industrial facilities with a strong focus on safety and quality.",
   },
+  {
+    icon: getImgPath("/images/services/ux-design-product_1.svg"),
+    title: "Torrent Power & GEB Services",
+    description: "End-to-end assistance for Torrent Power and GEB work including purpose change, new connection, and load extension or reduction.",
+  },
+  {
+    icon: getImgPath("/images/services/perfomance-optimization.svg"),
+    title: "Panel Making & System Solutions",
+    description: "All types of panel manufacturing and system solutions including Star-Delta starters, DOL, VFD panels, and industrial automation.",
+  },
 ];
 
 export const portfolioinfo = [

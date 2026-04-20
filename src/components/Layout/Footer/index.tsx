@@ -12,14 +12,14 @@ const Footer: FC = () => {
           {/* Left Section */}
           <div className="md:col-span-4 flex flex-col items-center md:items-start gap-4 text-center md:text-left">
             <Link href="/" className="flex justify-center md:justify-start mb-2">
-              <Image 
-                src={getImgPath("/images/logo/logo.svg")}
+              <Image
+                src={getImgPath("/images/logo/de-logo.png")}
                 alt="Dana Electrical Logo"
-                width={160} 
-                height={50} 
-                style={{ width: "auto", height: "auto" }} 
-                quality={100} 
-                unoptimized 
+                width={200}
+                height={95}
+                quality={100}
+                className="h-14 w-auto object-contain"
+                unoptimized
               />
             </Link>
             <p className="text-grey text-base leading-relaxed">Professional electrical solutions for industrial and infrastructure projects across India.</p>

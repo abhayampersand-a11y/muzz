@@ -4,26 +4,16 @@ import Link from 'next/link';
 
 const Logo: React.FC = () => {
   return (
-    <Link href="/">
+    <Link href="/" className="inline-block">
       <Image
-        src={getImgPath("/images/logo/logo.svg")}
+        src={getImgPath("/images/logo/de-logo.png")}
         alt="Dana Electrical Logo"
-        width={190}
-        height={44}
-        style={{ width: 'auto', height: 'auto' }}
+        width={200}
+        height={95}
         quality={100}
-        className='dark:hidden'
+        className="h-12 md:h-14 w-auto object-contain"
         unoptimized
-      />
-      <Image
-        src={getImgPath("/images/logo/logo-white.svg")}
-        alt="Dana Electrical Logo"
-        width={190}
-        height={44}
-        style={{ width: 'auto', height: 'auto' }}
-        quality={100}
-        className='dark:block hidden'
-        unoptimized
+        priority
       />
     </Link>
   );
