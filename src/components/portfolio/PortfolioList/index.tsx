@@ -32,6 +32,9 @@ const SHUTTER_VIBRATOR_MOTOR_DIR =
 const THREE_PHASE_INDUCTION_DIR = "/images/portfolio-photos/3 phase AC Induction Motor";
 const THREE_PHASE_DIR = "/images/portfolio-photos/Three Phase Water Pumps -20260420T163900Z-3-001/Three Phase Water Pumps";
 const TORRENT_WORK_DIR = "/images/portfolio-photos/Torrent work-20260420T193046Z-3-001/Torrent work";
+const BOREWELL_PUMPS_DIR = "/images/portfolio-photos/Borewell Pumps";
+const DEWATERING_PUMPS_DIR = "/images/portfolio-photos/Dewatering pumps";
+const SHOWCASE_DIR = "/images/portfolio-photos/Showcase of our expertise";
 
 const buildImages = (
   dir: string,
@@ -220,6 +223,81 @@ const portfolioCategories: PortfolioCategory[] = [
         "IMG_20251212_182641.jpg",
       ],
       "AC Gear Motor",
+    ),
+  },
+  {
+    key: "borewell-pumps",
+    label: "Borewell Pumps",
+    images: buildImages(
+      BOREWELL_PUMPS_DIR,
+      [
+        "IMG_20241009_163315.jpg",
+        "IMG_20250316_151644.jpg",
+        "IMG_20250319_110550.jpg",
+        "IMG_20250429_182722.jpg",
+        "IMG_20251123_140236.jpg",
+        "IMG_20251128_144142.jpg",
+        "IMG_20251206_102910.jpg",
+      ],
+      "Borewell Pumps",
+    ),
+  },
+  {
+    key: "dewatering-pumps",
+    label: "Dewatering Pumps",
+    images: buildImages(
+      DEWATERING_PUMPS_DIR,
+      [
+        "IMG_20240909_174455.jpg",
+        "IMG_20240910_154839.jpg",
+        "IMG_20241111_150325.jpg",
+        "IMG_20250227_165301.jpg",
+        "IMG_20250313_171850.jpg",
+        "IMG_20250322_140718.jpg",
+        "IMG_20250407_224157.jpg",
+        "IMG_20250506_124428.jpg",
+        "IMG_20250512_121406.jpg",
+        "IMG_20251015_192152.jpg",
+        "IMG_20251110_121212.jpg",
+      ],
+      "Dewatering Pumps",
+    ),
+  },
+  {
+    key: "showcase-of-our-expertise",
+    label: "Showcase of Our Expertise",
+    images: buildImages(
+      SHOWCASE_DIR,
+      [
+        "IMG_20240628_161835.jpg",
+        "IMG_20251016_194918.jpg",
+        "IMG_20251031_112140.jpg",
+        "IMG_20251108_182818.jpg",
+        "IMG_20251204_201529.jpg",
+        "IMG_20251204_201537.jpg",
+        "IMG_20251208_174945.jpg",
+        "IMG_20251225_154947.jpg",
+        "IMG_20251227_143141.jpg",
+        "IMG_20251229_112414.jpg",
+        "IMG_20260102_090316.jpg",
+        "IMG_20260103_112807.jpg",
+        "IMG_20260105_180326.jpg",
+        "IMG_20260107_113030.jpg",
+        "IMG_20260107_154708.jpg",
+        "IMG_20260109_181508.jpg",
+        "IMG_20260110_120330.jpg",
+        "IMG_20260113_101403.jpg",
+        "IMG_20260117_155152.jpg",
+        "IMG_20260128_161717.jpg",
+        "IMG_20260128_181722.jpg",
+        "IMG_20260212_213813.jpg",
+        "IMG_20260220_145151.jpg",
+        "IMG_20260225_143059.jpg",
+        "IMG_20260303_165219.jpg",
+        "IMG_20260319_224506.jpg",
+        "IMG_20260416_164529.jpg",
+      ],
+      "Showcase of Our Expertise",
     ),
   },
   {
