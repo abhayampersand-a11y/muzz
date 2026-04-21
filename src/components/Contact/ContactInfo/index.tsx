@@ -52,6 +52,20 @@ const ContactInfo = () => {
 
         {/* Google Map */}
         <div className="md:pt-32 pt-11 md:pb-28 pb-8">
+          <div className="flex justify-between items-center mb-4">
+            <span className="text-midnight_text dark:text-white font-semibold text-lg">Our Location</span>
+            <Link
+              href="https://www.google.com/search?q=panel+and+motor+rewinding+works+in+surat+-+dana+electrical+photos&oq=p&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg7Mg0IBBAAGIMBGLEDGIAEMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg8MgYICBBFGDwyCggJEAAYsQMYgAQyCggKEAAYsQMYgAQyCggLEAAYsQMYgAQyCggMEAAYsQMYgAQyBggNEEUYPDIGCA4QRRg80gEHNjkxajBqNKgCAbACAQ&client=ms-android-vivo-terr1-rso2&sourceid=chrome-mobile&ie=UTF-8#sv=CAMSqQUa-wQKBmxjbF9wdhIuCgNwdnESJ0NnMHZaeTh4TVd4c2JucHpZMk53SWd3S0JuQm9iM1J2Y3hBQ0dBSRLQAwoDbHFpEsgDQ2tGd1lXNWxiQ0JoYm1RZ2JXOTBiM0lnY21WM2FXNWthVzVuSUhkdmNtdHpJR2x1SUhOMWNtRjBJQzBnWkdGdVlTQmxiR1ZqZEhKcFkyRnNJSEJvYjNSdmN3aHEyckRQeXJLQWdBaGFWUkFKR0FBWUFSZ0NHQU1ZQkJnRkdBWVlCeGdJSWo5d1lXNWxiQ0JoYm1RZ2JXOTBiM0lnY21WM2FXNWthVzVuSUhkdmNtdHpJR2x1SUhOMWNtRjBJR1JoYm1FZ1pXeGxZM1J5YVdOaGJDQndhRzkwYjNPU0FSTmxiR1ZqZEhKcFkyRnNYMlZ1WjJsdVpXVnlxZ0dZQVFvTkwyY3ZNVEZzYkc1NmMyTmpjQW9JTDIwdk1EWTRhbVFLQ1M5dEx6QXhhREZvYmhBQktnb2lCbkJvYjNSdmN5Z0FNaDhRQVNJYnUxSGdFQTltNDRNVmI0cDJVdnQ4djRiR0J4eHItMFVxeGVGYU1rTVFBaUlfY0dGdVpXd2dZVzVrSUcxdmRHOXlJSEpsZDJsdVpHbHVaeUIzYjNKcmN5QnBiaUJ6ZFhKaGRDQmtZVzVoSUdWc1pXTjBjbWxqWVd3Z2NHaHZkRzl6EhIKA3RicxILbHJmOiEzc0lBRT0SRgoBcRJBcGFuZWwgYW5kIG1vdG9yIHJld2luZGluZyB3b3JrcyBpbiBzdXJhdCAtIGRhbmEgZWxlY3RyaWNhbCBwaG90b3MaEmxvY2FsLXBsYWNlLXZpZXdlciAMKiUKD2xjbF9sZWdhY3lfdGlsZRIQcHYtL2cvMTFsbG56c2NjcBgBMAEYCiDq5eaQDg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary text-primary text-sm font-medium hover:bg-primary hover:text-white transition-all"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
+                <path d="M12 11h8.533c.044.385.067.78.067 1.184 0 2.734-.98 5.036-2.678 6.6C16.42 20.272 14.38 21 12 21c-4.971 0-9-4.029-9-9s4.029-9 9-9c2.43 0 4.468.878 6.045 2.322L16.467 6.9C15.258 5.775 13.714 5 12 5c-3.866 0-7 3.134-7 7s3.134 7 7 7c3.498 0 6.135-2.177 6.8-5H12v-3z"/>
+              </svg>
+              View on Google
+            </Link>
+          </div>
           <iframe
             src="https://www.google.com/maps?q=21.1702,72.8311&hl=en&z=15&output=embed"
             width="1114"
