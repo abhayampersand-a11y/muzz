@@ -20,13 +20,13 @@ const Testimonial = () => {
           />
 
           <div className='pt-16 pb-28'>
-            <p className='font-medium md:text-xl text-base text-midnight_text dark:text-white text-center max-w-3xl mx-auto'>
+            {/* <p className='font-medium md:text-xl text-base text-midnight_text dark:text-white text-center max-w-3xl mx-auto'>
               Dana Electrical provided excellent service for our industrial motor
               rewinding and panel wiring requirements. Their team was highly
               professional, completed the work on time, and ensured everything
               was running smoothly. We truly appreciate their expertise and
               commitment to quality.
-            </p>
+            </p> */}
           </div>
 
           <div className='text-center'>

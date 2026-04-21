@@ -9,32 +9,36 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { portfolioinfo } from '@/app/api/data'
 
+const SHOWCASE_DIR = '/images/portfolio-photos/Showcase of our expertise'
+
 const homepagePhotos = [
-  {
-    image: '/images/Photos for homepage/IMG_20220704_202013.jpg',
-    alt: 'Homepage Photo 1',
-    title: 'Electrical Project',
-  },
-  {
-    image: '/images/Photos for homepage/IMG_20240502_153130.jpg',
-    alt: 'Homepage Photo 2',
-    title: 'Panel Installation',
-  },
-  {
-    image: '/images/Photos for homepage/IMG_20251016_194925.jpg',
-    alt: 'Homepage Photo 3',
-    title: 'Motor Rewinding',
-  },
-  {
-    image: '/images/Photos for homepage/IMG_20251021_024809.jpg',
-    alt: 'Homepage Photo 4',
-    title: 'Industrial Wiring',
-  },
-  {
-    image: '/images/Photos for homepage/IMG_20251206_103000.jpg',
-    alt: 'Homepage Photo 5',
-    title: 'System Solution',
-  },
+  { image: `${SHOWCASE_DIR}/IMG_20240628_161835.jpg`, alt: 'Motor Rewinding', title: 'Motor Rewinding' },
+  { image: `${SHOWCASE_DIR}/IMG_20251016_194918.jpg`, alt: 'Panel Installation', title: 'Panel Installation' },
+  { image: `${SHOWCASE_DIR}/IMG_20251031_112140.jpg`, alt: 'Pump Repair', title: 'Pump Repair' },
+  { image: `${SHOWCASE_DIR}/IMG_20251108_182818.jpg`, alt: 'Industrial Wiring', title: 'Industrial Wiring' },
+  { image: `${SHOWCASE_DIR}/IMG_20251204_201529.jpg`, alt: 'High Frequency Converter', title: 'High Frequency Converter' },
+  { image: `${SHOWCASE_DIR}/IMG_20251204_201537.jpg`, alt: 'System Solution', title: 'System Solution' },
+  { image: `${SHOWCASE_DIR}/IMG_20251208_174945.jpg`, alt: 'Ceiling Fan Rewinding', title: 'Ceiling Fan Rewinding' },
+  { image: `${SHOWCASE_DIR}/IMG_20251225_154947.jpg`, alt: 'AC Gear Motor', title: 'AC Gear Motor' },
+  { image: `${SHOWCASE_DIR}/IMG_20251227_143141.jpg`, alt: 'Borewell Pump Installation', title: 'Borewell Pump Installation' },
+  { image: `${SHOWCASE_DIR}/IMG_20251229_112414.jpg`, alt: 'Dewatering Pump', title: 'Dewatering Pump' },
+  { image: `${SHOWCASE_DIR}/IMG_20260102_090316.jpg`, alt: 'Three Phase Motor', title: 'Three Phase Motor' },
+  { image: `${SHOWCASE_DIR}/IMG_20260103_112807.jpg`, alt: 'Single Phase Pump', title: 'Single Phase Pump' },
+  { image: `${SHOWCASE_DIR}/IMG_20260105_180326.jpg`, alt: 'Shrimp Farming Motor', title: 'Shrimp Farming Motor' },
+  { image: `${SHOWCASE_DIR}/IMG_20260107_113030.jpg`, alt: 'Motor Rewinding', title: 'Motor Rewinding' },
+  { image: `${SHOWCASE_DIR}/IMG_20260107_154708.jpg`, alt: 'Panel Installation', title: 'Panel Installation' },
+  { image: `${SHOWCASE_DIR}/IMG_20260109_181508.jpg`, alt: 'Pump Repair', title: 'Pump Repair' },
+  { image: `${SHOWCASE_DIR}/IMG_20260110_120330.jpg`, alt: 'Industrial Wiring', title: 'Industrial Wiring' },
+  { image: `${SHOWCASE_DIR}/IMG_20260113_101403.jpg`, alt: 'Shutter Vibrator Motor', title: 'Shutter Vibrator Motor' },
+  { image: `${SHOWCASE_DIR}/IMG_20260117_155152.jpg`, alt: 'System Solution', title: 'System Solution' },
+  { image: `${SHOWCASE_DIR}/IMG_20260128_161717.jpg`, alt: 'High Frequency Converter', title: 'High Frequency Converter' },
+  { image: `${SHOWCASE_DIR}/IMG_20260128_181722.jpg`, alt: 'AC Gear Motor', title: 'AC Gear Motor' },
+  { image: `${SHOWCASE_DIR}/IMG_20260212_213813.jpg`, alt: 'Torrent Work', title: 'Torrent Work' },
+  { image: `${SHOWCASE_DIR}/IMG_20260220_145151.jpg`, alt: 'Borewell Pump Installation', title: 'Borewell Pump Installation' },
+  { image: `${SHOWCASE_DIR}/IMG_20260225_143059.jpg`, alt: 'Dewatering Pump', title: 'Dewatering Pump' },
+  { image: `${SHOWCASE_DIR}/IMG_20260303_165219.jpg`, alt: 'Three Phase Motor', title: 'Three Phase Motor' },
+  { image: `${SHOWCASE_DIR}/IMG_20260319_224506.jpg`, alt: 'Ceiling Fan Rewinding', title: 'Ceiling Fan Rewinding' },
+  { image: `${SHOWCASE_DIR}/IMG_20260416_164529.jpg`, alt: 'Torrent Work', title: 'Torrent Work' },
 ]
 
 const PortfolioCard = () => {

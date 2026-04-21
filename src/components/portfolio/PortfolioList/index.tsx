@@ -34,7 +34,6 @@ const THREE_PHASE_DIR = "/images/portfolio-photos/Three Phase Water Pumps -20260
 const TORRENT_WORK_DIR = "/images/portfolio-photos/Torrent work-20260420T193046Z-3-001/Torrent work";
 const BOREWELL_PUMPS_DIR = "/images/portfolio-photos/Borewell Pumps";
 const DEWATERING_PUMPS_DIR = "/images/portfolio-photos/Dewatering pumps";
-const SHOWCASE_DIR = "/images/portfolio-photos/Showcase of our expertise";
 
 const buildImages = (
   dir: string,
@@ -261,43 +260,6 @@ const portfolioCategories: PortfolioCategory[] = [
         "IMG_20251110_121212.jpg",
       ],
       "Dewatering Pumps",
-    ),
-  },
-  {
-    key: "showcase-of-our-expertise",
-    label: "Showcase of Our Expertise",
-    images: buildImages(
-      SHOWCASE_DIR,
-      [
-        "IMG_20240628_161835.jpg",
-        "IMG_20251016_194918.jpg",
-        "IMG_20251031_112140.jpg",
-        "IMG_20251108_182818.jpg",
-        "IMG_20251204_201529.jpg",
-        "IMG_20251204_201537.jpg",
-        "IMG_20251208_174945.jpg",
-        "IMG_20251225_154947.jpg",
-        "IMG_20251227_143141.jpg",
-        "IMG_20251229_112414.jpg",
-        "IMG_20260102_090316.jpg",
-        "IMG_20260103_112807.jpg",
-        "IMG_20260105_180326.jpg",
-        "IMG_20260107_113030.jpg",
-        "IMG_20260107_154708.jpg",
-        "IMG_20260109_181508.jpg",
-        "IMG_20260110_120330.jpg",
-        "IMG_20260113_101403.jpg",
-        "IMG_20260117_155152.jpg",
-        "IMG_20260128_161717.jpg",
-        "IMG_20260128_181722.jpg",
-        "IMG_20260212_213813.jpg",
-        "IMG_20260220_145151.jpg",
-        "IMG_20260225_143059.jpg",
-        "IMG_20260303_165219.jpg",
-        "IMG_20260319_224506.jpg",
-        "IMG_20260416_164529.jpg",
-      ],
-      "Showcase of Our Expertise",
     ),
   },
   {
