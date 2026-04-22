@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 
 type PortfolioImage = {
   src: string;
@@ -299,17 +300,31 @@ const portfolioCategories: PortfolioCategory[] = [
 ];
 
 const PortfolioList = () => {
+  const searchParams = useSearchParams();
+  const galleryParam = searchParams?.get("gallery") ?? null;
+
   const [activeTab, setActiveTab] = useState<string>(
-    portfolioCategories[0].key,
+    () =>
+      portfolioCategories.find((c) => c.key === galleryParam)?.key ??
+      portfolioCategories[0].key,
   );
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   const activeCategory =
     portfolioCategories.find((c) => c.key === activeTab) ??
     portfolioCategories[0];
+
+  useEffect(() => {
+    if (!galleryParam) return;
+    const match = portfolioCategories.find((c) => c.key === galleryParam);
+    if (!match) return;
+    setActiveTab(match.key);
+    sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [galleryParam]);
 
   useEffect(() => {
     if (!dropdownOpen) return;
@@ -327,12 +342,13 @@ const PortfolioList = () => {
 
   return (
     <section
+      ref={sectionRef}
       id="portfolio"
-      className="md:pb-24 pb-16 pt-8 dark:bg-darkmode px-4 lg:px-8"
+      className="md:pb-24 pb-16 pt-8 dark:bg-darkmode px-4 lg:px-8 scroll-mt-24"
     >
       <div className="max-w-[1600px] mx-auto">
         {/* Mobile: dropdown */}
-        <div className="md:hidden mb-8">
+        {/* <div className="md:hidden mb-8">
           <div className="relative w-full" ref={dropdownRef}>
             <button
               type="button"
@@ -384,7 +400,7 @@ const PortfolioList = () => {
               </ul>
             )}
           </div>
-        </div>
+        </div> */}
 
         {/* Desktop: Tabs */}
         <div
@@ -392,7 +408,7 @@ const PortfolioList = () => {
           role="tablist"
           aria-label="Portfolio categories"
         >
-          {portfolioCategories.map((cat) => {
+          {/* {portfolioCategories.map((cat) => {
             const isActive = cat.key === activeTab;
             return (
               <button
@@ -411,7 +427,7 @@ const PortfolioList = () => {
                 {cat.label}
               </button>
             );
-          })}
+          })} */}
         </div>
 
         {/* Panel */}
