@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Portfolio from "@/components/portfolio/PortfolioList";
 import HeroSub from "@/components/SharedComponent/HeroSub";
 import { Metadata } from "next";
@@ -18,7 +18,9 @@ const PortfolioList = () => {
                 description="Dive into a curated collection of my finest work, showcasing expertise across various industries."
                 breadcrumbLinks={breadcrumbLinks}
             />
-            <Portfolio />
+            <Suspense fallback={null}>
+                <Portfolio />
+            </Suspense>
         </>
     );
 };
