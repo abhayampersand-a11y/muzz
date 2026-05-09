@@ -8,10 +8,10 @@ const Logo: React.FC = () => {
       <Image
         src={getImgPath("/images/logo/de-logo.png")}
         alt="Dana Electrical Logo"
-        width={200}
-        height={95}
+        width={300}
+        height={140}
         quality={100}
-        className="h-12 md:h-14 w-auto object-contain"
+        className="h-16 md:h-20 w-auto object-contain"
         unoptimized
         priority
       />
